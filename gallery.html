@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link
+href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600"
+rel="stylesheet"
+/>
+<!-- Bootstrap -->
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/mkm.css" />
+<link type="text/css" rel="stylesheet" href="index.css" />
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+  <header id="header" class=" ">
+    <div class="container">
+      <div class="navbar-header">
+      <!-- Logo -->
+      <div class="navbar-brand ">
+        <a class="logo" href="index.html">
+        <img src="./img/Screenshot (58).png" alt="logo" />
+        </a>
+      </div>
+      <!-- /Logo -->
+  
+      <!-- Mobile toggle -->
+      <button class="navbar-toggle">
+        <span></span>
+      </button>
+      <!-- /Mobile toggle -->
+      </div>
+  
+      <!-- Navigation -->
+      <nav id="nav">
+      <ul class="main-menu nav navbar-nav navbar-right mkm-black">
+        <li><a class="mkm-black" href="landing.html">ژئولیگ</a></li>
+        <li><a href="gallery.html">گالری</a></li>
+        <li><a class="mkm-black" href="contact.html">ارتباط با ما</a></li>
+        <li><a class="mkm-black" href="about.html">درباره ما</a></li>
+        <li><a class="mkm-black" href="index.html">خانه</a></li>
+      </ul>
+      </nav>
+      <!-- /Navigation -->
+    </div>
+    </header>
+    <!-- <div
+    class="bg-image bg-parallax overlay"
+    style="background-image: url(./img/old-paper.jpg)"
+  ></div> -->
+    <div class="container">
+
+
+<div dir="rtl" class="w3-container">
+  <br><br>
+  <h2 class="">گالری</h2>
+  <p>زندگی مانند یک گالری هنری است، هر آنچه در آن قرار می‌گیرد، بازتابی از زیبایی‌های دنیاست. </p>
+</div>
+<div class="mkm-m-24x"></div>
+<br>
+<div class="w3-content w3-display-container mkm-w-100 mkm-m-24 mkm-jcc" style=" margin: auto;">
+
+<div class="w3-display-container mySlides mkm-w-100">
+  <img src="img/Geo3.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo4.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo5.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo6.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo7.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo8.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo9.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo10.jpg" style="width:100%; margin: auto;">
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img/Geo11.jpg" style="width:100%; margin: auto;">
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+<br><br><br><br>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

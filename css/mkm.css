@@ -1,0 +1,27 @@
+.mkm-jcsb{
+    display: flex;
+    justify-content: space-between;
+}
+.mkm-logo-footer{
+    width: 250px;
+}
+.mkm-jcc{
+    display: flex;
+    justify-content: center;
+}
+.mkm-w-100{
+    width: 100%;
+}
+.mkm-center{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.mkm-m-24{
+    margin: 24px;
+}
+
+.mkm-black{
+    color: #274354;
+}
+
